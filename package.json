@@ -1,0 +1,32 @@
+{
+  "name": "svelte-image",
+  "version": "0.0.1",
+  "svelte": "src/index.svelte",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.12.0",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sharp": "0.0.5",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "rollup-plugin-sharp": ">= 0.0.5"
+  },
+  "scripts": {
+    "prepublish": "run-p build build:dev",
+    "build": "rollup -c",
+    "build:dev": "rollup -c rollup.config.example.js",
+    "autobuild:dev": "rollup -c rollup.config.example.js -w",
+    "dev": "run-p start:dev autobuild:dev",
+    "start": "sirv example/public --single",
+    "start:dev": "sirv example/public --single --dev"
+  }
+}
