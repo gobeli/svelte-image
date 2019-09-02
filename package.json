@@ -26,7 +26,7 @@
     "build:dev": "rollup -c rollup.config.example.js",
     "autobuild:dev": "rollup -c rollup.config.example.js -w",
     "dev": "run-p start:dev autobuild:dev",
-    "start": "sirv example/public --single",
-    "start:dev": "sirv example/public --single --dev"
+    "start": "sirv --single",
+    "start:dev": "sirv --single --dev"
   }
 }

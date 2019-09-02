@@ -38,7 +38,7 @@ export default {
 		commonjs(),
 
 		// sharp plugin for image processing
-		sharp(),
+		sharp({ publicPath: 'example/public/' }),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
