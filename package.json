@@ -1,7 +1,7 @@
 {
-  "name": "svelte-image",
-  "version": "0.0.1",
-  "svelte": "src/index.svelte",
+  "name": "svelte-image-sharp",
+  "version": "0.0.2",
+  "svelte": "src/Image.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "devDependencies": {
